@@ -7,8 +7,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	abci "github.com/tendermint/abci/types"
-	"github.com/tendermint/basecoin/app"
-	"github.com/tendermint/basecoin/types"
+	"github.com/tendermint/cosmos-sdk/app"
+	"github.com/tendermint/cosmos-sdk/types"
 	"github.com/tendermint/go-wire"
 	eyescli "github.com/tendermint/merkleeyes/client"
 )

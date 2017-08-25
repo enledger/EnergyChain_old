@@ -5,7 +5,7 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/tendermint/tmlibs/cli"
 	"github.com/tendermint/cosmos-sdk/cmd/basecoin/commands"
-        "github.com/enledger/energychain/energycli"
+        "github.com/enledger/energychain/plugins/counter"
 	"github.com/tendermint/cosmos-sdk/types"
 )
 

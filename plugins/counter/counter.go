@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	abci "github.com/tendermint/abci/types"
-	"github.com/tendermint/basecoin/types"
+	"github.com/tendermint/cosmos-sdk/types"
 	"github.com/tendermint/go-wire"
 )
 

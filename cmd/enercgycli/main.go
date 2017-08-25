@@ -13,20 +13,16 @@ import (
 	"github.com/tendermint/light-client/commands/txs"
 	"github.com/tendermint/tmlibs/cli"
 
-	bcmd "github.com/tendermint/basecoin/cmd/basecli/commands"
-	bcount "github.com/tendermint/basecoin/docs/guide/counter/cmd/countercli/commands"
+	bcmd "github.com/tendermint/cosmos-sdk/cmd/basecli/commands"
+	bcount "github.com/tendermint/cosmos-sdk/docs/guide/counter/cmd/countercli/commands"
 )
 
 // BaseCli represents the base command when called without any subcommands
 var BaseCli = &cobra.Command{
-	Use:   "countercli",
-	Short: "Light client for tendermint",
-	Long: `Basecli is an version of tmcli including custom logic to
-present a nice (not raw hex) interface to the basecoin blockchain structure.
-
-This is a useful tool, but also serves to demonstrate how one can configure
-tmcli to work for any custom abci app.
-`,
+	Use:   "energycli",
+	Short: "Light client for EnergyChain",
+	Long: `energycli is based on Basecli, a version of tendermint command line interface (tmcli) including custom logic to
+present a nice (not raw hex) interface to the cosmos-sdk blockchain structure.`,
 }
 
 func main() {
@@ -64,6 +60,6 @@ func main() {
 		proxy.RootCmd,
 	)
 
-	cmd := cli.PrepareMainCmd(BaseCli, "CTL", os.ExpandEnv("$HOME/.countercli"))
+	cmd := cli.PrepareMainCmd(BaseCli, "CTL", os.ExpandEnv("$HOME/.energycli"))
 	cmd.Execute()
 }

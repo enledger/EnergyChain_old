@@ -5,8 +5,8 @@ import (
 	"github.com/spf13/viper"
 	wire "github.com/tendermint/go-wire"
 	txcmd "github.com/tendermint/light-client/commands/txs"
-	bcmd "github.com/tendermint/basecoin/cmd/basecli/commands"
-	"github.com/tendermint/basecoin/docs/guide/counter/plugins/counter"
+	bcmd "github.com/tendermint/cosmos-sdk/cmd/basecli/commands"
+	"github.com/tendermint/cosmos-sdk/docs/guide/counter/plugins/counter"
 	btypes "github.com/tendermint/basecoin/types"
 )
 
