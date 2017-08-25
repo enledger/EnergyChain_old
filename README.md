@@ -26,7 +26,7 @@ export $PATH="$PATH:$GOPATH"
 
 set these lines in your ~/.bashrc or ~/.bash_profile file
 
-### 2) install tendermint & basecoin (dependency setup)
+### 2) install tendermint (Proof-of-stake BFT consensus engine setup)
 
 go get -u github.com/tendermint/tendermint/cmd/tendermint
 
@@ -38,11 +38,11 @@ make all
 
 make install
 
-### 3) install energychain ABCI app
+### 3) install Energychain ABCI app
 
 go get -d github.com/enledger/energychain
 
-see : https://github.com/tendermint/bcosmos-sdk (for cosmos-sdk / basecoin background & tutorials)
+see : https://github.com/tendermint/cosmos-sdk (for cosmos-sdk / basecoin background & tutorials)
 
 cd $GOPATH/src/github.com/enledger/energychain
 
